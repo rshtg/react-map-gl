@@ -92,7 +92,8 @@ export default class App extends Component {
         {...viewport}
         mapStyle="mapbox://styles/mapbox/dark-v9"
         onViewportChange={this._updateViewport}
-        mapboxApiAccessToken={token} >
+        mapboxApiAccessToken={token}
+        onClick={console.log} >
 
         { CITIES.map(this._renderCityMarker) }
 
